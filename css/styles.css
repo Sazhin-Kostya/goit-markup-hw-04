@@ -319,17 +319,36 @@ body {
 
 .our-team-block{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 
-.our-team-svg-blok{
-    
-    
-}
 
 .team-svg-list{
     list-style: none;
     display: flex;
+    justify-content: space-around;
+    height: 44px;
+    width: 206px; 
+    margin-left: 32px;
+}
+
+.team-svg-item{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.team-svg-link{
+    display: inline-block;
+    padding: 12px 12px;
+}
+
+.team-svg-item:hover{
+    background-color:var(--accent-color);
+    fill: #FFFFFF;
+}
+
+.aaa:hover{
+    fill: #FFFFFF;
 }
 /*footer*/
 
