@@ -301,7 +301,6 @@ body {
 .our-team-list{
     display: flex;
     margin-top: 50px;
-    padding-bottom: 30px;
     justify-content: space-between;
     list-style-type: none;
 }
@@ -402,16 +401,12 @@ body {
 }
 
 .regular-customers-item{
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    width: 170px;
+    width: calc((100% - 150px) / 6);
     height: 92px;
 }
 
+
 .regular-customer-link{
-    display: block;
-    padding: 16px 32px;
-    fill: #AFB1B8;
     width: 100%;
     height: 100%;
     border: 1px solid #afb1b8;
@@ -421,18 +416,20 @@ body {
     justify-content: center;
 }
 
-
-
-.regular-customers-item:hover,
-.regular-customers-item:focus{
-    border-color: var(--accent-color);
-    
+.regular-customer-svg{
+    fill: #afb1b8;
 }
 
-.regular-customer-link:hover,
-.regular-customer-link:focus{
-    fill: #2196F3;
+.regular-customer-link:hover {
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
 }
+
+.regular-customer-link:hover .regular-customer-svg,
+.regular-customer-link:focus .regular-customer-svg {
+    fill: var(--accent-color);
+}
+
 
 /*footer*/
 .foot-block{
@@ -550,18 +547,16 @@ body {
     margin: -1px;
 }
 
+.portfolio-list{
+    margin-bottom: 50px;
+    gap: 8px;
+}
+
 .portfolio-list-btn{
     display: flex;
     justify-content: center;
     
 }
-
-.portfolio-list{
-    list-style-type: none;
-    margin-bottom: 50px;
-}
-
-
 
 .portfolio-btn{
     
@@ -576,7 +571,15 @@ body {
     border: 0;
     background-color: var(--third-bg);
     cursor: pointer;
+    
 }
+
+.portfolio-bt-item {
+    list-style-type: none;
+    
+}
+
+
 .portfolio-list-btn .portfolio-bt-list:not(:last-child){
     margin-right: 8px;
 }
@@ -627,6 +630,7 @@ body {
     margin-left: 30px;
     margin-top: 30px;
     border: 1px solid #EEEEEE;
+    list-style-type: none;
 }
 
 .img-name{
