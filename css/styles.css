@@ -323,7 +323,7 @@ body {
 }
 
 .our-team-name{
-    /*margin-top: 30px;*/
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -362,18 +362,24 @@ body {
     border-radius: 50%;
 }
 .team-svg-link{
-    display: inline-block;
-    padding: 12px 12px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     fill: #AFB1B8;
 }
 
-.team-svg-item:hover{
+.team-svg-link:hover,
+.team-svg-link:focus{
     background-color:var(--accent-color);
     
 }
 
 
-.team-svg-link:hover{
+.team-svg-link:hover,
+.team-svg-link:focus{
     fill: #FFFFFF;
 
 }
@@ -406,24 +412,33 @@ body {
     display: block;
     padding: 16px 32px;
     fill: #AFB1B8;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 
-.regular-customers-item:hover{
+.regular-customers-item:hover,
+.regular-customers-item:focus{
     border-color: var(--accent-color);
     
 }
 
-.regular-customer-link:hover{
+.regular-customer-link:hover,
+.regular-customer-link:focus{
     fill: #2196F3;
 }
 
 /*footer*/
 .foot-block{
     display: flex;
-        gap: 70px;
-        align-items: baseline;
+    gap: 70px;
+    align-items: baseline;
 
 }
 
@@ -442,7 +457,7 @@ body {
     color: var(--hero-foot-bg);
 }
 .address-location:hover,
-.address-location:focus {
+.address-location:focus{
     color: var(--accent-color);
 }
 
@@ -503,11 +518,18 @@ body {
 }
 
 .foot-social-link{
-    display: inline-block;
-    padding: 12px 12px; 
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
-.foot-social-item:hover{
+.foot-social-link:hover,
+.foot-social-link:focus{
     background-color: var(--accent-color);
+    border-radius: 50%;
     
 }
 /*Портфоліо*/
